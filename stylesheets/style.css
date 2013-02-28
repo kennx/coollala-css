@@ -258,14 +258,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* forms */
 
-form.inline {
-  display: inline;
-}
 
 
-
-form.horizontal {
-
+form.single .label {
+  float: left;
 }
 
 form.horizontal .field-row {
@@ -282,14 +278,27 @@ form.horizontal .field-row .label {
 }
 
 
+form.block .field-row {
+  margin-bottom: 10px;
+}
+
 
 form.horizontal .field-row .field-input-text,
 form.horizontal .field-row .field-input-radio,
 form.horizontal .field-row .field-input-checkbox,
 form.horizontal .field-row .field-textarea,
 form.horizontal .field-row .field-select,
-form.horizontal .field-row .field-select-multiple {
+form.horizontal .field-row .field-select-multiple,
+form.single .option .field-input-checkbox,
+form.single .option .field-input-text{
   float: left;
+}
+
+form.single .option .field-input-text,
+form.single .option .field-input-checkbox{
+  margin-right: 1em;
+  display: inline;
+  line-height: 30px;
 }
 
 form.horizontal .field-row .field-input-text .option {
@@ -301,7 +310,9 @@ form.horizontal .field-row .field-input-text input,
 form.horizontal .field-row .field-input-text .option input,
 form.horizontal .field-row .field-textarea textarea,
 form.horizontal .field-row .field-select select,
-form.horizontal .field-row .field-select-multiple select{
+form.horizontal .field-row .field-select-multiple select,
+form.single .option .field-input-text input,
+form.block .field-row .field-input-text input{
   border: 1px solid #CCC;
   padding: 0 8px;
   line-height: 28px;
@@ -324,7 +335,9 @@ form.horizontal .field-row .action {
 }
 
 
-form.horizontal .field-row .option input {
+form.horizontal .field-row .option input,
+form.single .field-input-checkbox input,
+form.block .field-input-checkbox input{
   vertical-align: 2px;
   _vertical-align: baseline;
   _margin-right: -5px;
@@ -344,6 +357,63 @@ form.horizontal .field-row .alert-inline {
   font-size: 12px;
   color: #888888;
   display: inline;
+}
+
+
+
+
+.button,
+.button-bule {
+  height: 30px;
+  padding: 0 1em;
+  cursor: pointer;
+  border-radius: 2px;
+  _line-height: 22px;
+  _padding-top: 3px;
+  _width:auto;
+  _overflow:visible;
+}
+
+
+html>/**/body .button-bule, x:-moz-any-link, x:default,
+html>/**/body .button, x:-moz-any-link, x:default{
+  padding-bottom: 2px;
+}
+
+.button {
+  color: #777;
+  border: 1px solid #DEDEDE;
+  border-right-color: #C2C2C2;
+  border-bottom-color: #C2C2C2;
+  background-color: #E9E9E9;
+}
+
+.button-bule {
+  color: #FFF;
+  border: 1px solid #3a71e9;
+  border-right-color: #3256A3;
+  border-bottom-color: #3256A3;
+  background-color: #4787ED;
+}
+
+
+.button:hover {
+  background-color:#EEE;
+  border-color: #CCC;
+}
+.button:active {
+  background-color:#CCC;
+  color: #999;
+}
+
+
+.button-bule:hover {
+  background-color:#498cf5;
+  border-color: #4369b9;
+}
+.button-bule:active {
+  background-color:#1952C7;
+  color: #9fbcf2
 }
 
 
