@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <style type="text/css">
+    body {
+      margin: 1.618em 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row-container">
+    <div class="col12">
+      <form action="/" method="get" class="horizontal">
+
+        <div class="field-row clearfix">
+          <label for="username" class="label">用户名</label>
+          <div class="field-input-text">
+            <input type="text" name="username" id="username" />
+            <div class="alert-block">
+              输入正确的用户名
+            </div>
+          </div>
+        </div>
+
+        <div class="field-row clearfix">
+          <label for="password" class="label">密码</label>
+          <div class="field-input-text">
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="alert-inline">
+            输入正确的密码
+          </div>
+        </div>
+
+        <div class="field-row clearfix">
+          <label for="password-confirm" class="label">密码确认</label>
+          <div class="field-input-text">
+            <input type="password" name="password-confirm" id="password-confirm" />
+          </div>
+        </div>
+
+        <div class="field-row clearfix">
+          <label class="label">性别</label>
+          <div class="field-input-radio">
+            <label class="option">
+              <input type="radio" value="0" name="sex" /> 男
+            </label>
+            <label class="option">
+              <input type="radio" value="1" name="sex" checked /> 女
+            </label>
+          </div>
+        </div>
+
+        <div class="field-row clearfix">
+          <label class="label">爱好</label>
+          <div class="field-input-checkbox">
+            <label class="option" for="ktv">
+              <input type="checkbox" value="0" name="ktv" id="ktv" /> K歌
+            </label>
+            <label class="option" for="dance">
+              <input type="checkbox" value="1" name="dance" id="dance" /> 跳舞
+            </label>
+            <label class="option" for="games">
+              <input type="checkbox" value="1" name="games" id="games" /> 游戏
+            </label>
+            <label class="option" for="cartoon">
+              <input type="checkbox" value="1" name="cartoon" id="cartoon" checked /> 漫画
+            </label>
+          </div>
+        </div>
+
+        <div class="field-row clearfix">
+          <label class="label" for="states">地区</label>
+          <div class="field-select">
+            <select name="cites" id="states">
+              <option selected="selected">选择省份</option>
+              <option value="1">山东</option>
+              <option value="2">山西</option>
+              <option value="3">河南</option>
+              <option value="4">河北</option>
+              <option value="5">湖南</option>
+            </select>
+            <select name="cites" id="cites">
+              <option selected="selected">选择城市</option>
+              <option value="1">永州市</option>
+              <option value="2">衡阳市</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-row clearfix">
+          <label class="label" for="choices">材料选择</label>
+          <div class="field-select-multiple">
+            <select name="cites" multiple="multiple" id="choices">
+              <option value="1">精炼恐怖结晶</option>
+              <option value="2" selected="selected">精炼危惧结晶</option>
+              <option value="3">精炼惊骇结晶</option>
+              <option value="4" selected="selected">晶化恐惧</option>
+              <option value="5">晶化恐怖</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-row clearfix">
+          <label class="label" for="body">正文内容正文内容正文内容</label>
+          <div class="field-textarea">
+            <textarea name="body" id="body" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+
+        <div class="field-row clearfix">
+          <div class="action">
+            <button type="submit">提交</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
